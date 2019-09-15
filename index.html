@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ice eCream Calculator</title>
+    <link rel="stylesheet" href="css/shoe.css">
+
+    <script type="text/x-template" class="shopTemplate">
+        <tr>
+            <tr>
+            <td>Ice-Cream Flavor</td>
+            <td>{{flavor}}</td>
+          </tr>
+          <tr>
+            <td>Ice-Cream Container</td>
+            <td>{{container}}</td>
+          </tr>
+          <tr>
+            <td>Ice-Cream Topping</td>
+            <td>{{topping}}</td>
+          </tr>
+       </tr>
+      
+    </script>
+
+</head>
+
+<body>
+    <img class="unicorn-icecream" src="unicorn-icecream.jpeg">
+    <h1 class="heading">Ice Cream Calculator</h1>
+
+  
+    <div class="chooseIceCream">
+            <div class="flavor">
+                   <p> Select your Ice-Cream flavor:</p>
+                    <label name="iceCreamFlavor" class="iceCreamFlavor">
+                        <input type="checkbox" value="chocolate">Chocolate</input>
+                        <span class="checkbox"></span>
+                        <input type="checkbox" value="strawberry">Strawberry</input>
+                        <span class="checkbox"></span>
+                        <input type="checkbox" value="vanilla">Vanilla</option>
+                        <span class="checkbox"></span>
+                    </label>
+                </div>
+            <br><br>
+    
+        <div class="container">
+            <p>Select your Ice-Cream container:</p>
+            <label name="iceCreamContainer" class="iceCreamContainer">
+                <input type="checkbox" value="plainCone">Plain Cone</input>
+                <span class="checkbox"></span>
+                <input type="checkbox" value="sugarCone">Sugar Cone</input>
+                <span class="checkbox"></span>
+                <input type="checkbox" value="paperCup">Paper Cup</input>
+                <span class="checkbox"></span>
+            </label>
+        </div>
+    <br>
+    
+        <div class="topping">
+            <p>Select your Ice-Cream topping:</p>
+            <label name="iceCreamTopping" class="iceCreamTopping">
+                <input type="checkbox" value="crumbedPeanuts">Crumbed peanuts</input>
+                <input type="checkbox" value="strawberryGliter">Strawberry Gliter</input>
+                <input type="checkbox" value="caramelDip">Caramel dip</input>
+                <input type="checkbox" value="chocolateDip">Chocolate Dip</input>
+                <input type="checkbox" value="oreos">Oreos</input>
+                <input type="checkbox" value="smarties">Smarties</input>
+            </label>
+        </div>
+
+        <br><br>
+<div class="priceDisplay center">
+        <ul class="iceCreamPriceDisplay">
+
+        </ul>
+</div>        
+</body>
+</html>
