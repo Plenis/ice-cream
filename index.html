@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ice eCream Calculator</title>
-    <link rel="stylesheet" href="css/shoe.css">
+    <!-- <link rel="stylesheet" href="css/simplegrid.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
-    <script type="text/x-template" class="shopTemplate">
+    <script type="text/x-template" class="iceCreamTemplate">
         <tr>
             <tr>
             <td>Ice-Cream Flavor</td>
@@ -34,7 +35,7 @@
   
     <div class="chooseIceCream">
             <div class="flavor">
-                   <p> Select your Ice-Cream flavor:</p>
+                   <p> <b>Select your Ice-Cream flavor: </b></p>
                     <label name="iceCreamFlavor" class="iceCreamFlavor">
                         <input type="checkbox" value="chocolate">Chocolate</input>
                         <span class="checkbox"></span>
@@ -44,10 +45,10 @@
                         <span class="checkbox"></span>
                     </label>
                 </div>
-            <br><br>
+            <br>
     
         <div class="container">
-            <p>Select your Ice-Cream container:</p>
+            <p> <b> Select your Ice-Cream container: </b></p>
             <label name="iceCreamContainer" class="iceCreamContainer">
                 <input type="checkbox" value="plainCone">Plain Cone</input>
                 <span class="checkbox"></span>
@@ -60,22 +61,27 @@
     <br>
     
         <div class="topping">
-            <p>Select your Ice-Cream topping:</p>
+            <p> <b>  Select your Ice-Cream topping: </b></p>
             <label name="iceCreamTopping" class="iceCreamTopping">
                 <input type="checkbox" value="crumbedPeanuts">Crumbed peanuts</input>
                 <input type="checkbox" value="strawberryGliter">Strawberry Gliter</input>
                 <input type="checkbox" value="caramelDip">Caramel dip</input>
                 <input type="checkbox" value="chocolateDip">Chocolate Dip</input>
                 <input type="checkbox" value="oreos">Oreos</input>
-                <input type="checkbox" value="smarties">Smarties</input>
+                <input type="checkbox" value="smarties">Smcenterarties</input>
             </label>
         </div>
 
         <br><br>
 <div class="priceDisplay center">
-        <ul class="iceCreamPriceDisplay">
+        <tbody class="iceCreamPriceDisplay">
 
-        </ul>
+        </tbody>
 </div>        
+
+<br><br>
+        <div>
+            <button class="iceCreamCalculateBtn center" type="submit">Calcutate</button>
+        </div>
 </body>
 </html>
